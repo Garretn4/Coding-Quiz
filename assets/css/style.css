@@ -1,0 +1,22 @@
+/* h3 {
+} */
+.hide {
+    display: none;
+}
+
+.unHide {
+    display: block;
+}
+
+quiz-set-1 {
+    text-align: center;
+}
+
+body {
+    background-color: grey;
+    font-size: 30px;
+}
+
+ol {
+    text-decoration: none;
+}

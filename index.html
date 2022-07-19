@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/css/reset.css" rel="Reset CSS" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <title>Code Quiz</title>
+</head>
+
+<body>
+    <header>
+        <h3>view Highscores</h3>
+        <h3>timer <span id="timer"></span></h3>
+    </header>
+
+    <section class="intro-section">
+        <h2>Coding quiz challenge</h2>
+        <p>
+
+        </p>
+        ,<button id="startBtn">Start Quiz</button>
+    </section>
+
+    <section class="main-section hide">
+        <article class="quiz-set-1">
+            <ol>
+                <h2>What is a function</h2>
+                <li>
+                    <button data-article="quiz-set-1" data-nextArticle="quiz-set-2" class="choiceBtn">
+                        Is a css property
+                    </button>
+                </li>
+                <li>
+                    <button data-article="quiz-set-1" data-nextArticle="quiz-set-2" class="choiceBtn">
+                        Edits html
+                    </button>
+                </li>
+                <li>
+                    <button data-article="quiz-set-1" data-nextArticle="quiz-set-2" class="choiceBtn">
+                        Chunk of code that you can use over and over again, rather than writing it out multiple times.
+                    </button>
+                </li>
+                <li>
+                    <button data-article="quiz-set-1" data-nextArticle="quiz-set-2" class="choiceBtn">
+                        this is not the right choice
+                    </button>
+                </li>
+            </ol>
+        </article>
+        <article class="quiz-set-2 hide">
+            <ol>
+                <h2>What is css used for?</h2>
+                <li>
+                    <button data-article="quiz-set-2" data-nextArticle="quiz-set-3" class="choiceBtn">
+                        An object
+                    </button>
+                </li>
+                <li>
+                    <button data-article="quiz-set-2" data-nextArticle="quiz-set-3" class="choiceBtn">
+                        Builds the structure of a document
+                    </button>
+                </li>
+                <li>
+                    <button data-article="quiz-set-2" data-nextArticle="quiz-set-3" class="choiceBtn">
+                        Used to create a README file
+                    </button>
+                </li>
+                <li>
+                    <button data-article="quiz-set-2" data-nextArticle="quiz-set-3" class="choiceBtn">
+                        Styling and html document
+                    </button>
+                </li>
+            </ol>
+        </article>
+        <article class="quiz-set-3 hide">
+            <ol>
+                <h2>
+                    What is a For Loop?
+                </h2>
+                <li>
+                    <button data-article="quiz-set-3" data-nextArticle="quiz-set-4" class="choiceBtn">
+                        A for loop is a control flow statement for specifying iteration, which allows code to be
+                        executed repeatedly.
+                    </button>
+                </li>
+                <li>
+                    <button data-article="quiz-set-3" data-nextArticle="quiz-set-4" class="choiceBtn">
+                        selects certain elements from the DOM
+                    </button>
+                </li>
+                <li>
+                    <button data-article="quiz-set-3" data-nextArticle="quiz-set-4" class="choiceBtn">
+                        Creates a new element
+                    </button>
+                </li>
+                <li>
+                    <button data-article="quiz-set-3" data-nextArticle="quiz-set-4" class="choiceBtn">
+                        Resets the timer
+                    </button>
+                </li>
+            </ol>
+        </article>
+        <article class="quiz-set-4 hide">
+            <ol>
+                <h2>What is JQUERY?</h2>
+                <li>
+                    <button data-article="quiz-set-4" data-nextArticle="quiz-set-5" class="choiceBtn">
+                        Helps you to write the base of your html document
+                    </button>
+                </li>
+                <li>
+                    <button data-article="quiz-set-4" data-nextArticle="quiz-set-5" class="choiceBtn">
+                        A library that allows you to interact with CSS
+                    </button>
+                </li>
+                <li>
+                    <button data-article="quiz-set-4" data-nextArticle="quiz-set-5" class="choiceBtn">
+                        jQuery is a fast, small, and feature-rich JavaScript library.
+                    </button>
+                </li>
+                <li>
+                    <button data-article="quiz-set-4" data-nextArticle="quiz-set-5" class="choiceBtn">
+                        Styles your document
+                    </button>
+                </li>
+            </ol>
+        </article>
+        <article class="quiz-set-5 hide">
+            <ol>
+                <h2>What is HTML used for?</h2>
+                <li>
+                    <button data-article="quiz-set-5" data-nextArticle="end" class="choiceBtn">
+                        finds the elements in the DOM
+                    </button>
+                </li>
+                <li>
+                    <button data-article="quiz-set-5" data-nextArticle="end" class="choiceBtn">
+                        Styling a document.
+                    </button>
+                </li>
+                <li>
+                    <button data-article="quiz-set-5" data-nextArticle="end" class="choiceBtn">
+                        Creates the structure of a document
+                    </button>
+                </li>
+                <li>
+                    <button data-article="quiz-set-5" data-nextArticle="end" class="choiceBtn">
+                        creates functions
+                    </button>
+                </li>
+            </ol>
+        </article>
+    </section>
+    <section class="initials-section hide">
+        Enter Initials: <input type="text" id="initials" />
+        <br />
+        <button id="saveBtn">save initials</button>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
